@@ -29,7 +29,7 @@ def lambda_handler(event, context):
     print(f"event {event}")
     try:
         verify_signature(event)
-    except BadSignatureError as e
+    except BadSignatureError as e:
         raise Exception(f"[UNAUTHORIZED] Invalid request signature: {e}")
 
     body = event.get("body-json")
