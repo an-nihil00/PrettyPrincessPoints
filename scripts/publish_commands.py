@@ -4,7 +4,7 @@ import os
 import requests
 import argparse
 
-import os.environ as env
+from os import environ as env
 
 from time import sleep
 
