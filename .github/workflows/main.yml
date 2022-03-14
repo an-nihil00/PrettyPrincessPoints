@@ -2,7 +2,7 @@ name: Deploy Python to Lambda
 on: # trigger this action whenever changes are pushed to main
   push:
     branches:
-      -master
+      -main
 jobs:
   build: # packages code and deploys it to AWS
     runs-on: ubuntu-latest
