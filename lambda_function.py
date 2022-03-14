@@ -3,7 +3,7 @@ import json
 from nacl.signing import VerifyKey
 from nacl.exceptions import BadSignatureError
 
-PUBLIC_KEY = 
+PUBLIC_KEY = "cba6e14c3d9a358497412181ec5c1497cdcca2d2af27747490c2e057e8370112" 
 PING_PONG = {"type": 1}
 RESPONSE_TYPES = {
         "PONG": 1,

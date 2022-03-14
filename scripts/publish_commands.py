@@ -50,7 +50,7 @@ def get_all_commands(url):
     if not existing_commands:
         return []
 
-def delete_command(url)
+def delete_command(url):
     r = requests.delete(url, headers = HEADERS)
     print(r.text)
 
