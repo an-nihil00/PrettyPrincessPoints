@@ -18,7 +18,7 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_DEFAULT_REGION: ${{ secrets.AWS_REGION }}
     - name: Upload Commands to S3
-      uses: tpaschalis/s3-sync-action@main
+      uses: tpaschalis/s3-sync-action@master
       env:
         FILE: ./commands/commands.json
         AWS_REGION: ${{ secrets.AWS_REGION }}
