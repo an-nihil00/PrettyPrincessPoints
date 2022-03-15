@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@main
     - name: Deploy Code to Lambda
-      uses: mariamrf/py-lambda-action@v1.0.0
+      uses: an-nihil00/py-lambda-action@master
       with: 
         lambda_layer_arn: 'arn:aws:lambda:${{ secrets.AWS_REGION }}:488822936157:layer:lambda_deps'
         lambda_function_name: 'discord_event_handler'
