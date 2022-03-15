@@ -17,7 +17,7 @@ s3 = boto3.client("s3",
         region_name = AWS_REGION)
 
 APPLICATION_ID = env.get("APPLICATION_ID")
-TEST_SERVERS = env.get("TEST_SERVERS")
+TEST_SERVERS = json.loads(env.get("TEST_SERVERS"))
 
 BOT_TOKEN = env.get("BOT_TOKEN")
 HEADERS = {"Authorization": f"Bot {BOT_TOKEN}"}
