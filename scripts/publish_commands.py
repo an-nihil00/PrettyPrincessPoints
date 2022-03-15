@@ -23,7 +23,7 @@ BOT_TOKEN = env.get("BOT_TOKEN")
 HEADERS = {"Authorization": f"Bot {BOT_TOKEN}"}
 
 BUCKET = env.get("AWS_BUCKET")
-KEY = "command.json"
+KEY = "commands.json"
 
 global_url = f"https://discord.com/api/v8/applications/{APPLICATION_ID}/commands"
 guild_urls = [f"https://discord.com/api/v8/applications/{APPLICATION_ID}/guilds/{test_server_id}/commands" for test_server_id in TEST_SERVERS]
