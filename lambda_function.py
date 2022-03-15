@@ -15,8 +15,8 @@ RESPONSE_TYPES = {
 
 def verify_signature(event):
     raw_body = event.get("rawBody")
-    auth_sig = even["params"]["header"].get("x-signature-ed25519")
-    auth_ts  = even["params"]["header"].get("x-signature-timestamp")
+    auth_sig = event["params"]["header"].get("x-signature-ed25519")
+    auth_ts  = event["params"]["header"].get("x-signature-timestamp")
 
     message = auth_ts.encode() + raw_body.encode()
     verify_key = VerifyKey(bytes.fromhex(PUBLIC_KEY))
